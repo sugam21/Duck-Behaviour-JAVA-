@@ -1,0 +1,316 @@
+@startuml
+
+/' diagram meta data start
+config=StructureConfiguration;
+{
+  "projectClassification": {
+    "searchMode": "OpenProject", // OpenProject, AllProjects
+    "includedProjects": "",
+    "pathEndKeywords": "*.impl",
+    "isClientPath": "",
+    "isClientName": "",
+    "isTestPath": "",
+    "isTestName": "",
+    "isMappingPath": "",
+    "isMappingName": "",
+    "isDataAccessPath": "",
+    "isDataAccessName": "",
+    "isDataStructurePath": "",
+    "isDataStructureName": "",
+    "isInterfaceStructuresPath": "",
+    "isInterfaceStructuresName": "",
+    "isEntryPointPath": "",
+    "isEntryPointName": "",
+    "treatFinalFieldsAsMandatory": false
+  },
+  "graphRestriction": {
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "removeByInheritance": "", // inheritance/annotation based filtering is done in a second step
+    "removeByAnnotation": "",
+    "removeByClassPackage": "", // cleanup the graph after inheritance/annotation based filtering is done
+    "removeByClassName": "",
+    "cutMappings": false,
+    "cutEnum": true,
+    "cutTests": true,
+    "cutClient": true,
+    "cutDataAccess": false,
+    "cutInterfaceStructures": false,
+    "cutDataStructures": false,
+    "cutGetterAndSetter": true,
+    "cutConstructors": true
+  },
+  "graphTraversal": {
+    "forwardDepth": 6,
+    "backwardDepth": 6,
+    "classPackageExcludeFilter": "",
+    "classPackageIncludeFilter": "",
+    "classNameExcludeFilter": "",
+    "classNameIncludeFilter": "",
+    "methodNameExcludeFilter": "",
+    "methodNameIncludeFilter": "",
+    "hideMappings": false,
+    "hideDataStructures": false,
+    "hidePrivateMethods": true,
+    "hideInterfaceCalls": true, // indirection: implementation -> interface (is hidden) -> implementation
+    "onlyShowApplicationEntryPoints": false, // root node is included
+    "useMethodCallsForStructureDiagram": "ForwardOnly" // ForwardOnly, BothDirections, No
+  },
+  "details": {
+    "aggregation": "GroupByClass", // ByClass, GroupByClass, None
+    "showClassGenericTypes": true,
+    "showMethods": true,
+    "showMethodParameterNames": true,
+    "showMethodParameterTypes": true,
+    "showMethodReturnType": true,
+    "showPackageLevels": 2,
+    "showDetailedClassStructure": true
+  },
+  "rootClass": "Main",
+  "extensionCallbackMethod": "" // qualified.class.name#methodName - signature: public static String method(String)
+}
+diagram meta data end '/
+
+
+
+digraph g {
+    rankdir="TB"
+    splines=polyline
+    
+
+'nodes 
+subgraph cluster_1102565814 { 
+   	label=RedHeadDuck
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   RedHeadDuck1102565814[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)RedHeadDuck</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ display()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1143517908 { 
+   	label=MuteQuack
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   MuteQuack1143517908[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MuteQuack</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ quack()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1176277335 { 
+   	label=RubberDuck
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   RubberDuck1176277335[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)RubberDuck</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ display()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1757360091 { 
+   	label=DecoyDuck
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   DecoyDuck1757360091[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)DecoyDuck</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ display()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1810804168 { 
+   	label=Squeak
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Squeak1810804168[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Squeak</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ quack()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1948112648 { 
+   	label=MallardDuck
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   MallardDuck1948112648[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)MallardDuck</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ display()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_1951622949 { 
+   	label=FlyNoWay
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   FlyNoWay1951622949[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FlyNoWay</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ fly()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2141401 { 
+   	label=Duck
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Duck2141401[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Duck</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >#   flyBehaviour: FlyBehaviour [0..1]</TD></TR>
+<TR><TD ALIGN="LEFT" >#   quackBehaviour: QuackBehaviour [0..1]</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ display()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ performFly()</TD></TR>
+<TR><TD ALIGN="LEFT" >+ performQuack()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_2390489 { 
+   	label=Main
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Main2390489[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Main</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ main(args: String[])</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_254309775 { 
+   	label=FlyWithWings
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   FlyWithWings254309775[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)FlyWithWings</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ fly()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+subgraph cluster_78387141 { 
+   	label=Quack
+	labeljust=l
+	fillcolor="#ececec"
+	style=filled
+   
+   Quack78387141[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Quack</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ quack()</TD></TR>
+</TABLE>>
+	style=filled
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
+} 
+
+'edges    
+Duck2141401 -> DecoyDuck1757360091[arrowhead=none, arrowtail=empty, dir=both];
+Duck2141401 -> FlyNoWay1951622949[arrowhead=none];
+Duck2141401 -> FlyWithWings254309775[arrowhead=none];
+Duck2141401 -> MallardDuck1948112648[arrowhead=none, arrowtail=empty, dir=both];
+Duck2141401 -> MuteQuack1143517908[arrowhead=none];
+Duck2141401 -> Quack78387141[arrowhead=none];
+Duck2141401 -> RedHeadDuck1102565814[arrowhead=none, arrowtail=empty, dir=both];
+Duck2141401 -> RubberDuck1176277335[arrowhead=none, arrowtail=empty, dir=both];
+Duck2141401 -> Squeak1810804168[arrowhead=none];
+Main2390489 -> DecoyDuck1757360091[label="main() -> display()"];
+Main2390489 -> MallardDuck1948112648[label="main() -> display()"];
+Main2390489 -> RedHeadDuck1102565814[label="main() -> display()"];
+Main2390489 -> RubberDuck1176277335[label="main() -> display()"];
+    
+}
+@enduml
